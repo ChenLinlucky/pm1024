@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/xiang_simp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+    <TextView
+        android:id="@+id/xiang_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/xiang_price"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="加入购物车"
+            android:gravity="center"
+            android:background="#ff0"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="购买"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#f00"
+            />
+    </LinearLayout>
+</LinearLayout>

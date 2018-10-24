@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/sou"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="搜索"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <!--轮播-->
+                <com.recker.flybanner.FlyBanner
+                    android:id="@+id/flybanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                </com.recker.flybanner.FlyBanner>
+                <!--9宫格-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_jiugongge"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                </android.support.v7.widget.RecyclerView>
+                <!--跑马灯-->
+                <com.example.p1024.mvp.ui.activity.widgh.NoticeView
+                    android:id="@+id/not_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                </com.example.p1024.mvp.ui.activity.widgh.NoticeView>
+                <!--商品推荐-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_tui"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>
